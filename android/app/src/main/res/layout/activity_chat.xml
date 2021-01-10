@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChatActivity">
+
+
+
+
+
+    <ListView
+        android:id="@+id/messages_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintBottom_toTopOf="@id/composing_area"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/composing_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clipToPadding="false"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/lo_rounded1"
+            android:elevation="6dp">
+
+            <EditText
+                android:id="@+id/et_composer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@id/btn_send"
+                android:background="@drawable/lo_rounded2"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:minHeight="50dp"
+                android:padding="2dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:src="@drawable/ic_send"
+                android:tint="@color/primary" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

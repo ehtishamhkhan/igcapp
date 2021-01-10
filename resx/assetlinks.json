@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.archetech.incognichat",
+    "sha256_cert_fingerprints":
+    ["6C:AF:62:22:E4:5A:4E:4F:2E:B9:2C:F9:7E:FB:F0:C8:34:37:B9:6B:41:4C:0E:31:1A:A2:BF:72:61:C8:15:EE"]
+  }
+}]

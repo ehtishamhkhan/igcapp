@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "608297100352",
+    "project_id": "igcapp-fbde9",
+    "storage_bucket": "igcapp-fbde9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608297100352:android:eb659ac683be93d443eba5",
+        "android_client_info": {
+          "package_name": "com.archetech.incognichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608297100352-kvf8em5g8d9p9bdlo9kcve9k1baql39a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.archetech.incognichat",
+            "certificate_hash": "f7040deba577a19c8e3e79315f6aa597942f3c28"
+          }
+        },
+        {
+          "client_id": "608297100352-kifa0pbtjvj33ga4aus5l5u2a9tvkdlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxdXpHcxiTRJbOkwZn8w_M4Pa8lklliak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608297100352-kifa0pbtjvj33ga4aus5l5u2a9tvkdlf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

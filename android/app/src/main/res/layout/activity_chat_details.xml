@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ChatDetailsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/lo_rounded2"
+        android:elevation="2dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/background">
+
+                    <EditText
+
+                        android:layout_toLeftOf="@id/btn_save"
+                        android:id="@+id/et_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/lo_rounded1"
+                        android:padding="10dp"
+                        android:text="Incognito"
+                        android:textColor="@color/brand2"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:layout_marginRight="10dp"
+                        android:tint="@color/black"
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/lo_rounded4"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_save" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_token"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@color/background"
+                    android:drawableRight="@drawable/ic_copy"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/brand2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Bearer Token"
+                    android:textColor="@color/brand2" />
+
+                <TextView
+                    android:id="@+id/txt_conversation_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@color/background"
+                    android:drawableRight="@drawable/ic_copy"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/brand2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Conversation Id"
+                    android:textColor="@color/brand2" />
+
+                <TextView
+                    android:id="@+id/txt_conversation_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@color/background"
+                    android:drawableRight="@drawable/ic_copy"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/brand2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Conversation Password"
+                    android:textColor="@color/brand2" />
+
+                <TextView
+                    android:id="@+id/txt_public_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@color/background"
+                    android:drawableRight="@drawable/ic_copy"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/brand2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="My Public Key"
+                    android:textColor="@color/brand2" />
+
+                <TextView
+
+                    android:id="@+id/txt_private_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:background="@color/background"
+                    android:drawableRight="@drawable/ic_copy"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/brand2"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="My Private Key"
+                    android:textColor="@color/brand2" />
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txt_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="700"
+                    android:background="@drawable/lo_rounded2"
+                    android:backgroundTint="@color/red"
+                    android:drawableLeft="@drawable/ic_clear"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Block Conversation"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/cl_share"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/lo_rounded2"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvh_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Share your profile"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/brand2"
+            android:textFontWeight="900"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/brand2"
+            android:drawablePadding="8dp"
+            >
+        </TextView>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/share_options"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"
+            android:layout_margin="8dp"
+            app:alignItems="stretch"
+            app:alignContent="flex_start"
+            app:layout_constraintTop_toBottomOf="@id/tvh_share"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/item_share_fb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_facebook"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                />
+            <ImageView
+                android:id="@+id/item_share_wa"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_whatsapp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                />
+
+            <ImageView
+                android:id="@+id/item_share_mg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_messenger"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                />
+            <ImageView
+                android:id="@+id/item_share_tr"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_twitter"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                />
+            <ImageView
+                android:id="@+id/item_share_ig"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_instagram"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:elevation="2dp"
+                />
+
+            <ImageView
+                android:id="@+id/item_share_other"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_share"
+                android:tint="@color/myblack"
+                android:layout_margin="10dp"
+                android:padding="4dp"
+                android:elevation="2dp"
+                />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/item_share_copy_url"
+                android:textSize="16sp"
+                android:text="copy profile url"
+                android:textColor="@color/myblack"
+                android:drawableRight="@drawable/ic_copy"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/myblack"
+                android:textFontWeight="600"
+                android:background="@color/background"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_reputation"
+       app:layout_constraintTop_toBottomOf="@id/cl_share"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lo_rounded2"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvh_reputation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Your reputation"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/brand2"
+            android:textFontWeight="900"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/brand2"
+            android:drawablePadding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_reputation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/brand2"
+            app:layout_constraintHorizontal_weight="700"
+            android:text="100/100"
+            app:layout_constraintTop_toBottomOf="@id/tvh_reputation"
+            app:layout_constraintStart_toStartOf="@id/cl_reputation"
+            android:layout_margin="16dp"
+            android:elevation="2dp"
+
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/cl_reputation"
+            app:layout_constraintEnd_toEndOf="@id/cl_reputation"
+            android:src="@drawable/ic_reputation"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="5dp"
+            app:tint="@color/brand"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_views"
+        app:layout_constraintTop_toBottomOf="@id/cl_reputation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lo_rounded2"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tvh_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Views"
+            android:layout_margin="16dp"
+            android:textSize="18sp"
+            android:textColor="@color/brand2"
+            android:textFontWeight="900"
+            android:drawableRight="@drawable/ic_info"
+            android:drawableTint="@color/brand"
+            android:drawablePadding="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/brand2"
+            app:layout_constraintHorizontal_weight="700"
+            android:text="1"
+            app:layout_constraintTop_toBottomOf="@id/tvh_views"
+            app:layout_constraintStart_toStartOf="@id/cl_views"
+            android:layout_margin="16dp"
+            android:elevation="2dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/cl_views"
+            app:layout_constraintEnd_toEndOf="@id/cl_views"
+            android:src="@drawable/ic_views"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:tint="@color/brand"
+            android:elevation="5dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tv_updated_at"
+                android:textSize="16sp"
+                android:text="last updated at: "
+                android:textFontWeight="300"
+                android:background="@drawable/lo_rounded2"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:textColor="@color/brand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
